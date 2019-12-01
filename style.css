@@ -1,0 +1,360 @@
+*{
+    top: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav{
+    /* background-color: slateblue; */
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #8a00d4;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin: 0 10px;
+    border-radius: 10px;
+    padding: 7px 13px;
+}
+
+a.active,a:hover{
+    transition: .5s;
+    background-color: #e3e3e3;
+}
+.checkbtn{
+    line-height: 80px;
+    font-size: 30px;
+    color: #8a00d4;
+    float: right;
+    margin-right: 20px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+label.logo{
+    font-size: 30px;
+    color: #8a00d4;
+    line-height: 80px;
+    font-weight: bold;
+    padding: 0px 90px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.column-section{
+    display: flex;
+}
+
+.text-head{
+    padding-top: 100px;
+    padding-left: 30px;
+    margin-right: 90px;
+}
+
+.text-head h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.text-head p{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.text-head button{
+    background-color: #f9c46b;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    font-size: 15px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.315);
+    border: 2px solid #f9c46b;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.text-head button:hover{
+    background-color: #fff;
+    color: #f9c46b;
+    border: 2px solid #f9c46b;
+}
+
+.button :nth-child(1){
+    background-color: #fff;
+    color: #f9c46b;
+    border: 2px solid #f9c46b;
+}
+
+.button:hover :nth-child(1){
+    background-color: #f9c46b;
+    color: black;
+}
+
+.undraw-image{
+    margin-inline-end: 195px;
+    padding-top: 40px;
+}
+
+.undraw-image > img{
+    max-width: 150%;
+}
+
+.down-arrow {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.down-arrow a{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: white;
+}
+
+.down-arrow img{
+    max-width: 12%;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.skill-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+
+}
+
+.skill-section h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    padding-bottom: 10px;
+
+}
+
+.skill-section span{
+    border: 2px solid #8a00d4;
+    width: 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.skill-section p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px 200px 0px 200px;
+    letter-spacing: 1px;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-inline-end: 150px;
+    margin-inline-start: 150px;
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+
+.skill-row{
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px 60px 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.315);
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 10px;
+    transition: 0.6s;
+}
+
+.skill-row:hover{
+    opacity: 2px black;
+    background-color: #f782c2;
+    color: white;
+    transition: 0.6s;
+    transform: scale(1.3); 
+    box-shadow: 5px 10px 30px 10px rgba(0, 0, 0, 0.315);
+}
+
+.skill-row i{
+    font-size: 40px;
+    padding-bottom: 30px;
+    color: #8a00d4;
+}
+
+.skill-row p{
+    text-align: center;
+    margin-inline-end: 25px;
+    margin-inline-start: 25px;
+    padding-top: 10px;
+}
+
+/* @media(max-width: 1024px){
+    .column-section{
+        display: contents;
+    }
+    .undraw-image img{
+        max-width: 100%;
+        padding-left: 180px;
+    }
+    label.logo{
+        font-size: 13px;
+    }
+    .skills{
+        margin-inline-end: 100px;
+        margin-inline-start: 100px;
+    }
+} */
+
+@media(max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+      }
+
+    nav ul li{
+        font-size: 16px;
+    }
+    .undraw-image > img{
+        max-width: 238%;
+        margin-left: -90px;
+    }
+    .text-head h1{
+        font-size: xx-large;
+    }
+    .text-head p{
+        font-size: small;
+    }
+    .down-arrow{
+        margin-block-start: 70px;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-row{
+        padding-top: 30px;
+        margin-top: 15px;
+    }
+    .skill-row:hover{
+        transform: scale(1.1);
+    }
+  
+
+}
+
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        background-color: #f782c2;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        text-align: center;
+        transition: all .5s;
+        left: -100%;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        color: white;
+      }
+      a:hover,a.active{
+        background: none;
+        color: #f9c46b;
+      }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+
+    #check:checked ~ ul{
+        left: 0%;
+    }
+  
+}
+
+@media(max-width: 768px){
+    .text-head h1{
+        font-size: 30px;
+    }
+    .text-head p{
+        font-size: smaller;
+    }
+    .undraw-image{
+        margin-right: 250px;
+    }
+    .undraw-image img{
+        max-width: 325%;
+    }
+    .button{
+        display: flex;
+    }
+    .down-arrow{
+        margin-block-start: 10px;
+    }
+}
+
+@media(max-width: 320px){
+    label.logo{
+        font-size: 15px;
+        margin-left: -20px;
+    }
+    .text-head{
+        padding-top: 10px;
+        display:grid;
+    }
+    .column-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .undraw-image img{
+        max-width: 430%;
+        margin-left: auto;
+        padding-top: initial;
+    }
+    .down-arrow img{
+        max-width: 40%;
+    }
+    .skill-section p{
+        display: contents;
+        margin-left: 10px;
+    }
+}
